@@ -1,0 +1,260 @@
+
+:root {
+    --cor-branco:#fff;
+    --cor-vermelho: #e50914; 
+    --cor-vermelho-claro:  #fc1722; 
+    --cor-cinza: #b3b3b3; 
+    --cor-cinza-escuro:  #737373; 
+    --cor-azul:  #0071eb; 
+    --cor-preto: #000000; 
+    
+  }
+
+body {
+   
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-image: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        background-image: url("../img/background.jpg");
+        background-color: var(--cor-preto);
+    
+}
+
+body::before {
+    content: '';
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo img {
+    height: 45px;
+    width: 167px;
+}
+
+.header {
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.login-body {
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 550px;
+    margin-left: 50%;
+    background-color: rgb(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+
+}
+.login-body h2 {
+    font-size: 32px;
+    color: var(--cor-branco);
+    margin-top: 0;
+}
+
+.login-body input {
+    height: 50px;
+    width: 100%;
+    color: var(--cor-branco);
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.login-body input:hover {
+    background-color: #444;
+}
+.input-box {
+    margin-bottom: 20px;
+}
+
+.login-body button {
+    height: 50px;
+    width: 100%;
+    color: var(--cor-branco);
+    background-color:var(--cor-vermelho);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.login-body button:hover {
+    background-color:var(--cor-vermelho-claro);
+    cursor: pointer;
+}
+.support {
+    display: flex;
+    color: var(--cor-cinza);
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.support input {
+    width: 15px;
+    height: 15px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+.remember span {
+    margin-right: 5px;
+    height: 25px;
+}
+
+.help a {
+    text-decoration: none;
+    color: var(--cor-cinza);
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
+
+.login-facebook {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color:var(--cor-cinza);
+}
+
+.login-facebook span {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.login-facebook span a {
+    text-decoration: none;
+    color: var(--cor-cinza);
+}
+
+.sign-up {
+    color: var(--cor-cinza);
+    font-size: 16px;
+}
+
+.sign-up a {
+    color: var(--cor-branco);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    color: var(--cor-cinza);
+    font-size: 13px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: var(--cor-azul);
+}
+
+.terms a:hover {
+    text-decoration: underline;
+
+}
+/* Responsividade para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+
+    .body {
+        background-image: none;
+
+    }
+    body {
+        background-image: none;
+    }
+
+    .header {
+        
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 5%;
+        
+    }
+    .header img {
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+   
+    .login-body {
+        padding: 40px;
+        width: 90%;
+        max-width: 100%;
+        height: 450px;
+    }
+
+    .support {
+        flex-direction: column;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .login-footer {
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .login-facebook {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-facebook span {
+        font-size: 12px;
+    }
+
+    .login-body h2 {
+        font-size: 26px;
+    }
+
+    .login-body input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .login-body button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .sign-up,
+    .terms p {
+        font-size: 11px;
+    }
+
+    .sign-up a {
+        font-size: 14px;
+    }
+    
+}
+
